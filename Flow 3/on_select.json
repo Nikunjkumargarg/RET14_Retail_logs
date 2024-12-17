@@ -9,8 +9,8 @@
     "bap_uri": "https://ondc-buyer.stagingshop.com/protocol/v1",
     "bpp_id": "preprod.dixch.com/ondc",
     "transaction_id": "88f34eac-a66e-4233-acdd-7e03e9b65dcd",
-    "message_id": "3d2c0266-6412-4a5e-8297-b5ad24917c3d",
-    "timestamp": "2024-11-01T17:03:22.720Z",
+    "message_id": "b283d298-d6bc-45d2-9674-ffd4ca5ae93a",
+    "timestamp": "2024-11-01T17:05:15.648Z",
     "bpp_id": "ondcpreprod.sellerapp.in"
   },
   "message": {
@@ -21,17 +21,13 @@
       },
       "items": [
         {
-          "id": "6a9a423b6ac6b564",
-          "fulfillment_id": "b20724c0-d13b-4c93-9b26-df2c197f6b99"
-        },
-        {
           "id": "cd66d65211e9b706",
-          "fulfillment_id": "b20724c0-d13b-4c93-9b26-df2c197f6b99"
+          "fulfillment_id": "5794cff0-78a4-4171-bb51-51549d8e8575"
         }
       ],
       "fulfillments": [
         {
-          "id": "b20724c0-d13b-4c93-9b26-df2c197f6b99",
+          "id": "5794cff0-78a4-4171-bb51-51549d8e8575",
           "type": "Delivery",
           "tracking": false,
           "state": { "descriptor": { "code": "Serviceable" } },
@@ -43,20 +39,6 @@
       "quote": {
         "price": { "currency": "INR", "value": "32494" },
         "breakup": [
-          {
-            "title": "Samsung Galaxy S22 Ultra Green 12GB 256GB",
-            "price": { "currency": "INR", "value": "0" },
-            "@ondc/org/item_id": "6a9a423b6ac6b564",
-            "@ondc/org/item_quantity": { "count": 0 },
-            "@ondc/org/title_type": "item",
-            "item": {
-              "quantity": {
-                "available": { "count": "0" },
-                "maximum": { "count": "99" }
-              },
-              "price": { "currency": "INR", "value": "99909" }
-            }
-          },
           {
             "title": "Samsung Galaxy A54 5G Awesome Lime 8GB 128GB",
             "price": { "currency": "INR", "value": "32494" },
@@ -74,17 +56,12 @@
           {
             "title": "Delivery charges",
             "price": { "currency": "INR", "value": "0" },
-            "@ondc/org/item_id": "b20724c0-d13b-4c93-9b26-df2c197f6b99",
+            "@ondc/org/item_id": "5794cff0-78a4-4171-bb51-51549d8e8575",
             "@ondc/org/title_type": "delivery"
           }
         ],
         "ttl": "PT5M"
       }
     }
-  },
-  "error": {
-    "type": "DOMAIN-ERROR",
-    "code": "40002",
-    "message": "[{item_id:6a9a423b6ac6b564,error:40002}]"
   }
 }

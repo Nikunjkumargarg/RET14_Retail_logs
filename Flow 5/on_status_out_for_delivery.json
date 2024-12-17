@@ -1,6 +1,6 @@
 {
   "context": {
-    "action": "on_confirm",
+    "action": "on_status",
     "bap_id": "ondc-buyer.stagingshop.com",
     "bap_uri": "https://ondc-buyer.stagingshop.com/protocol/v1",
     "bpp_id": "ondc-connect.localzoho.com",
@@ -9,9 +9,10 @@
     "core_version": "1.2.0",
     "country": "IND",
     "domain": "ONDC:RET14",
-    "message_id": "fad042d0-aafc-40c5-833e-0d0c9c804e70",
-    "timestamp": "2024-12-11T12:28:07.443Z",
-    "transaction_id": "16e1ebc2-6c1e-45bd-9342-6a35f6cdf6f8"
+    "message_id": "7c1f6021-52b7-4799-8d93-973dea7b6c78",
+    "timestamp": "2024-12-11T16:15:11.236Z",
+    "transaction_id": "16e1ebc2-6c1e-45bd-9342-6a35f6cdf6f8",
+    "ttl": "PT30S"
   },
   "message": {
     "order": {
@@ -40,6 +41,12 @@
               "email": "middleware@zrpl.co.in",
               "phone": "9962870534"
             },
+            "instructions": {
+              "name": "Proof of delivery",
+              "code": "3",
+              "short_desc": "-",
+              "long_desc": "-"
+            },
             "location": {
               "address": {
                 "area_code": "560102",
@@ -50,7 +57,7 @@
                 "name": "Monisha Sudha",
                 "state": "Karnataka"
               },
-              "gps": "12.9141099, 77.6371518"
+              "gps": "12.9141099,77.6371518"
             },
             "person": {
               "name": "Monisha Sudha"
@@ -70,6 +77,12 @@
               "email": "first1@outlook.com",
               "phone": "7896543210"
             },
+            "instructions": {
+              "name": "Proof of pickup",
+              "code": "3",
+              "short_desc": "7544",
+              "long_desc": "-"
+            },
             "location": {
               "address": {
                 "area_code": "560066",
@@ -87,16 +100,32 @@
               "range": {
                 "end": "2024-12-12T19:05:07.443Z",
                 "start": "2024-12-12T18:05:07.443Z"
-              }
+              },
+              "timestamp": "2024-12-11T16:04:05.146Z"
             }
           },
           "state": {
             "descriptor": {
-              "code": "Pending"
+              "code": "Out-for-delivery"
             }
           },
           "type": "Delivery",
-          "tracking": false
+          "tracking": false,
+          "tags": [
+            {
+              "code": "tracking",
+              "list": [
+                {
+                  "code": "gps_enabled",
+                  "value": "no"
+                },
+                {
+                  "code": "url_enabled",
+                  "value": "no"
+                }
+              ]
+            }
+          ]
         }
       ],
       "items": [
@@ -110,19 +139,16 @@
       ],
       "payment": {
         "collected_by": "BAP",
-        "@ondc/org/buyer_app_finder_fee_amount": "3",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
         "@ondc/org/settlement_details": [
           {
-            "bank_name": "SBI",
-            "beneficiary_name": "Seller_app_name",
-            "branch_name": "HSR",
-            "settlement_bank_account_no": "732974327445",
             "settlement_counterparty": "seller-app",
-            "settlement_ifsc_code": "SBIN003327",
             "settlement_phase": "sale-amount",
             "settlement_type": "upi",
-            "upi_address": "gft@oksbi"
+            "upi_address": "gft@oksbi",
+            "settlement_status": "PAID",
+            "settlement_timestamp": "2024-12-11T12:28:07.512Z"
           }
         ],
         "params": {
@@ -147,7 +173,7 @@
           {
             "item": {
               "price": {
-                "value": "3000",
+                "value": "3000.00",
                 "currency": "INR"
               }
             },
@@ -170,52 +196,31 @@
               "currency": "INR"
             },
             "title": "Delivery charges"
+          },
+          {
+            "@ondc/org/item_id": "A1AAD5A650BE5229",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "value": "0.00",
+              "currency": "INR"
+            },
+            "title": "Convenience Fee"
           }
         ],
         "price": {
           "value": "3179.00",
           "currency": "INR"
         },
-        "ttl": "P1D"
+        "ttl": "PT30M"
       },
-      "state": "Accepted",
-      "tags": [
+      "state": "In-progress",
+      "updated_at": "2024-12-11T16:04:52.468Z",
+      "documents": [
         {
-          "code": "bap_terms",
-          "list": [
-            {
-              "code": "accept_bpp_terms",
-              "value": "Y"
-            },
-            {
-              "code": "static_terms",
-              "value": "https://github.com/ONDC-Official/NP-Static-Terms/buyerNP_BNP/1.0/zrpl.pdf"
-            },
-            {
-              "code": "tax_number",
-              "value": "29AAACZ6251B1ZE"
-            }
-          ]
-        },
-        {
-          "code": "bpp_terms",
-          "list": [
-            {
-              "code": "np_type",
-              "value": "MSN"
-            },
-            {
-              "code": "tax_number",
-              "value": "33AACCZ3115C1ZW"
-            },
-            {
-              "code": "provider_tax_number",
-              "value": "AAACW1102A"
-            }
-          ]
+          "url": "https://ondc-connect.localzoho.com/api/v1/ondc/invoice?order_id=ZRPL000000081&sign=WJSekVis9oAbhax0ksuO5acPiYl%2BfOemeKJk/nMtcd1933teXQ8JXTAWVFPGTWkLrW6/tGQp0V314HXC1czcAg%3D%3D",
+          "label": "Invoice"
         }
-      ],
-      "updated_at": "2024-12-11T12:28:07.443Z"
+      ]
     }
   }
 }

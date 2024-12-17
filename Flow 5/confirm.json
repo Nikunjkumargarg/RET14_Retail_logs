@@ -7,68 +7,76 @@
     "core_version": "1.2.0",
     "bap_id": "ondc-buyer.stagingshop.com",
     "bap_uri": "https://ondc-buyer.stagingshop.com/protocol/v1",
-    "bpp_id": "preprod.dixch.com/ondc",
-    "transaction_id": "9f0f565d-4a29-4803-a627-376edd8aec4d",
-    "message_id": "a3634b02-7ce0-478f-a84a-a407d8d21f46",
-    "timestamp": "2024-11-01T06:53:01.000Z",
-    "bpp_id": "ondcpreprod.sellerapp.in",
+    "bpp_uri": "https://ondc-connect.localzoho.com/api/v1/ondc/retail",
+    "transaction_id": "16e1ebc2-6c1e-45bd-9342-6a35f6cdf6f8",
+    "message_id": "fad042d0-aafc-40c5-833e-0d0c9c804e70",
+    "timestamp": "2024-12-11T06:58:02.000Z",
+    "bpp_id": "ondc-connect.localzoho.com",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "ZRPL000004100",
+      "id": "ZRPL000000081",
       "state": "Created",
       "billing": {
         "address": {
-          "name": "Nikunj Garg",
-          "building": "Colive whitestone, bannerghata",
-          "locality": "Colive whitestone, bannerghata",
+          "name": "Monisha Sudha",
+          "building": "#42 Olsen sector 4, hsr layout, Bangalore",
+          "locality": "#42 Olsen sector 4, hsr layout, Bangalore",
           "city": "bangalore",
           "state": "Karnataka",
           "country": "IN",
-          "area_code": "560083"
+          "area_code": "560102"
         },
-        "phone": "8950377998",
-        "name": "Nikunj Garg",
+        "phone": "9962870534",
+        "name": "Monisha Sudha",
         "email": "middleware@zrpl.co.in",
-        "created_at": "2024-11-01T12:22:24.000Z",
-        "updated_at": "2024-11-01T12:22:24.000Z"
+        "created_at": "2024-12-11T12:20:59.000Z",
+        "updated_at": "2024-12-11T12:20:59.000Z"
       },
       "items": [
         {
-          "id": "6a9a423b6ac6b564",
-          "quantity": { "count": 1 },
-          "fulfillment_id": "6c8c4d17-e00e-46ce-85a0-700688c44b22"
+          "id": "3000029974815",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "A1AAD5A650BE5229"
         }
       ],
       "provider": {
-        "id": "slrp-1491484",
-        "locations": [{ "id": "SANG-1000" }]
+        "id": "3000011641449",
+        "locations": [
+          {
+            "id": "3000011641449"
+          }
+        ]
       },
       "fulfillments": [
         {
-          "id": "6c8c4d17-e00e-46ce-85a0-700688c44b22",
-          "@ondc/org/TAT": "P7D",
+          "id": "A1AAD5A650BE5229",
+          "@ondc/org/TAT": "PT31H7M",
           "tracking": false,
           "@ondc/org/withholding_amount": "0.00",
           "end": {
             "contact": {
               "email": "middleware@zrpl.co.in",
-              "phone": "8950377998"
+              "phone": "9962870534"
             },
             "location": {
-              "gps": "12.8206081, 77.6089779",
+              "gps": "12.9141099, 77.6371518",
               "address": {
-                "name": "Nikunj Garg",
-                "building": "Colive whitestone, bannerghata",
-                "locality": "Colive whitestone, bannerghata",
+                "name": "Monisha Sudha",
+                "building": "#42 Olsen sector 4, hsr layout, Bangalore",
+                "locality": "#42 Olsen sector 4, hsr layout, Bangalore",
                 "city": "bangalore",
                 "state": "Karnataka",
                 "country": "IN",
-                "area_code": "560083"
+                "area_code": "560102"
               }
             },
-            "person": { "name": "Nikunj Garg" }
+            "person": {
+              "name": "Monisha Sudha"
+            }
           },
           "type": "Delivery"
         }
@@ -76,9 +84,9 @@
       "payment": {
         "uri": "https://cashfree.com/",
         "params": {
-          "amount": "99909.00",
+          "amount": "3179.00",
           "currency": "INR",
-          "transaction_id": "9f0f565d-4a29-4803-a627-376edd8aec4d"
+          "transaction_id": "16e1ebc2-6c1e-45bd-9342-6a35f6cdf6f8"
         },
         "status": "PAID",
         "type": "ON-ORDER",
@@ -100,21 +108,37 @@
         ]
       },
       "quote": {
-        "price": { "currency": "INR", "value": "99909.00" },
+        "price": {
+          "currency": "INR",
+          "value": "3179.00"
+        },
         "breakup": [
           {
-            "@ondc/org/item_id": "6a9a423b6ac6b564",
-            "@ondc/org/item_quantity": { "count": 1 },
-            "title": "Samsung Galaxy S22 Ultra Green 12GB 256GB",
+            "@ondc/org/item_id": "3000029974815",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Samsung F55",
             "@ondc/org/title_type": "item",
-            "price": { "currency": "INR", "value": "99909.00" },
-            "item": { "price": { "currency": "INR", "value": "99909" } }
+            "price": {
+              "currency": "INR",
+              "value": "3000.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "3000"
+              }
+            }
           },
           {
-            "title": "Delivery charges",
-            "price": { "currency": "INR", "value": "0" },
-            "@ondc/org/item_id": "6c8c4d17-e00e-46ce-85a0-700688c44b22",
-            "@ondc/org/title_type": "delivery"
+            "@ondc/org/item_id": "A1AAD5A650BE5229",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "value": "179.00",
+              "currency": "INR"
+            },
+            "title": "Delivery charges"
           }
         ],
         "ttl": "P1D"
@@ -123,21 +147,32 @@
         {
           "code": "bap_terms",
           "list": [
-            { "code": "accept_bpp_terms", "value": "Y" },
+            {
+              "code": "accept_bpp_terms",
+              "value": "Y"
+            },
             {
               "code": "static_terms",
               "value": "https://github.com/ONDC-Official/NP-Static-Terms/buyerNP_BNP/1.0/zrpl.pdf"
             },
-            { "code": "tax_number", "value": "29AAACZ6251B1ZE" }
+            {
+              "code": "tax_number",
+              "value": "29AAACZ6251B1ZE"
+            }
           ]
         },
         {
           "code": "bpp_terms",
-          "list": [{ "code": "tax_number", "value": "29ABDCS3411L1Z7" }]
+          "list": [
+            {
+              "code": "tax_number",
+              "value": "33AACCZ3115C1ZW"
+            }
+          ]
         }
       ],
-      "created_at": "2024-11-01T06:53:01.000Z",
-      "updated_at": "2024-11-01T06:53:30.000Z"
+      "created_at": "2024-12-11T06:58:02.000Z",
+      "updated_at": "2024-12-11T06:58:04.000Z"
     }
   }
 }

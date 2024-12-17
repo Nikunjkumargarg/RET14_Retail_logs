@@ -1,201 +1,349 @@
 {
   "context": {
-    "domain": "ONDC:RET14",
-    "country": "IND",
-    "city": "std:080",
     "action": "on_cancel",
-    "core_version": "1.2.0",
     "bap_id": "ondc-buyer.stagingshop.com",
     "bap_uri": "https://ondc-buyer.stagingshop.com/protocol/v1",
-    "bpp_id": "preprod.dixch.com/ondc",
-    "transaction_id": "9f0f565d-4a29-4803-a627-376edd8aec4d",
-    "message_id": "74f81406-a096-4842-863b-0b6639c7a73a",
-    "timestamp": "2024-11-01T12:39:32.956Z",
-    "bpp_id": "ondcpreprod.sellerapp.in"
+    "bpp_id": "ondc-connect.localzoho.com",
+    "bpp_uri": "https://ondc-connect.localzoho.com/api/v1/ondc/retail",
+    "city": "std:080",
+    "core_version": "1.2.0",
+    "country": "IND",
+    "domain": "ONDC:RET14",
+    "message_id": "b6651f75-1d85-4c9b-80c3-d1f50c9be85d",
+    "timestamp": "2024-12-12T12:24:51.244Z",
+    "transaction_id": "16e1ebc2-6c1e-45bd-9342-6a35f6cdf6f8",
+    "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "ZRPL000004100",
-      "state": "Cancelled",
-      "provider": {
-        "id": "slrp-1491484",
-        "locations": [{ "id": "SANG-1000" }]
-      },
-      "items": [
-        {
-          "id": "6a9a423b6ac6b564",
-          "fulfillment_id": "6c8c4d17-e00e-46ce-85a0-700688c44b22",
-          "quantity": { "count": 0 }
-        },
-        {
-          "id": "6a9a423b6ac6b564",
-          "fulfillment_id": "6c8c4d17-e00e-46ce-85a0-700688c44b22_Cancel",
-          "quantity": { "count": 1 }
-        }
-      ],
+      "id": "ZRPL000000081",
       "billing": {
-        "name": "Nikunj Garg",
-        "phone": "8950377998",
         "address": {
-          "name": "Nikunj Garg",
-          "building": "Colive whitestone, bannerghata",
+          "area_code": "560102",
+          "building": "#42 Olsen sector 4, hsr layout, Bangalore",
           "city": "bangalore",
-          "state": "Karnataka",
           "country": "IN",
-          "area_code": "560083",
-          "locality": "Colive whitestone, bannerghata"
+          "locality": "#42 Olsen sector 4, hsr layout, Bangalore",
+          "name": "Monisha Sudha",
+          "state": "Karnataka"
         },
-        "created_at": "2024-11-01T12:22:24.000Z",
-        "updated_at": "2024-11-01T12:22:24.000Z"
+        "created_at": "2024-12-11T12:20:59.000Z",
+        "email": "middleware@zrpl.co.in",
+        "name": "Monisha Sudha",
+        "phone": "9962870534",
+        "updated_at": "2024-12-11T12:20:59.000Z"
       },
-      "cancellation": {
-        "cancelled_by": "ondcpreprod.sellerapp.in",
-        "reason": { "id": "011" }
-      },
+      "created_at": "2024-12-11T06:58:02.000Z",
       "fulfillments": [
         {
-          "id": "6c8c4d17-e00e-46ce-85a0-700688c44b22",
+          "end": {
+            "contact": {
+              "email": "middleware@zrpl.co.in",
+              "phone": "9962870534"
+            },
+            "location": {
+              "address": {
+                "area_code": "560102",
+                "building": "#42 Olsen sector 4, hsr layout, Bangalore",
+                "city": "bangalore",
+                "country": "IN",
+                "locality": "#42 Olsen sector 4, hsr layout, Bangalore",
+                "name": "Monisha Sudha",
+                "state": "Karnataka"
+              },
+              "gps": "12.9141099,77.6371518"
+            },
+            "person": {
+              "name": "Monisha Sudha"
+            },
+            "time": {
+              "range": {
+                "end": "2024-12-14T02:12:07.443Z",
+                "start": "2024-12-14T01:12:07.443Z"
+              }
+            }
+          },
+          "id": "A1AAD5A650BE5229",
+          "@ondc/org/provider_name": "VMart-Bangalore",
+          "@ondc/org/TAT": "PT31H7M",
+          "start": {
+            "contact": {
+              "email": "first1@outlook.com",
+              "phone": "7896543210"
+            },
+            "location": {
+              "address": {
+                "area_code": "560066",
+                "city": "Bengaluru Urban",
+                "locality": "Bengaluru",
+                "state": "Karnataka"
+              },
+              "descriptor": {
+                "name": "VMart-Bangalore"
+              },
+              "gps": "12.920914,77.68364",
+              "id": "3000011641449"
+            },
+            "time": {
+              "range": {
+                "end": "2024-12-12T19:05:07.443Z",
+                "start": "2024-12-12T18:05:07.443Z"
+              },
+              "timestamp": "2024-12-11T16:04:05.146Z"
+            }
+          },
+          "state": {
+            "descriptor": {
+              "code": "Cancelled"
+            }
+          },
           "type": "Delivery",
           "tracking": false,
-          "start": {
-            "time": { "timestamp": "2024-11-01T12:35:05.663Z" },
-            "location": {
-              "id": "SANG-1000",
-              "gps": "12.9264417,77.5619417",
-              "address": {
-                "name": "Sangeetha Mobiles",
-                "building": "below Sangeetha mobiles,",
-                "city": "Bangalore",
-                "state": "Karnataka",
-                "country": "India",
-                "area_code": "560070",
-                "locality": "Banashankari"
-              },
-              "descriptor": { "name": "Sangeetha Mobiles" }
-            },
-            "contact": {
-              "phone": "8197759422",
-              "email": "support@sangeethamobiles.com"
-            }
-          },
-          "end": {
-            "person": { "name": "Nikunj Garg" },
-            "location": {
-              "gps": "12.8206081,77.6089779",
-              "address": {
-                "name": "Nikunj Garg",
-                "building": "Colive whitestone, bannerghata",
-                "city": "bangalore",
-                "state": "Karnataka",
-                "country": "IN",
-                "area_code": "560083",
-                "locality": "Colive whitestone, bannerghata"
-              }
-            },
-            "contact": {
-              "phone": "8950377998",
-              "email": "middleware@zrpl.co.in"
-            }
-          },
-          "state": { "descriptor": { "code": "Cancelled" } },
-          "@ondc/org/provider_name": "SellerApp-Logistics",
           "tags": [
             {
-              "code": "precancel_state",
+              "code": "cancel_request",
               "list": [
-                { "code": "fulfillment_state", "value": "Delivery-failed" },
                 {
-                  "code": "updated_at",
-                  "value": "2024-11-01 12:39:32.953 +0000 UTC"
+                  "code": "retry_count",
+                  "value": "3"
+                },
+                {
+                  "code": "rto_id",
+                  "value": "A1AAD5A650BE5229-RTO"
+                },
+                {
+                  "code": "reason_id",
+                  "value": "011"
+                },
+                {
+                  "code": "initiated_by",
+                  "value": "ondc-connect.localzoho.com"
                 }
               ]
             },
             {
-              "code": "cancel_request",
+              "code": "precancel_state",
               "list": [
-                { "code": "reason_id", "value": "011" },
-                { "code": "initiated_by", "value": "ondcpreprod.sellerapp.in" }
+                {
+                  "code": "fulfillment_state",
+                  "value": "Out-for-delivery"
+                },
+                {
+                  "code": "updated_at",
+                  "value": "2024-12-11T16:04:52.468Z"
+                }
               ]
             }
-          ],
-          "@ondc/org/TAT": "P7D"
+          ]
         },
         {
-          "id": "6c8c4d17-e00e-46ce-85a0-700688c44b22_Cancel",
-          "type": "Cancel",
-          "tracking": false,
-          "state": { "descriptor": { "code": "Cancelled" } },
+          "end": {
+            "location": {
+              "address": {
+                "area_code": "560066",
+                "city": "Bengaluru Urban",
+                "locality": "Bengaluru",
+                "state": "Karnataka"
+              },
+              "descriptor": {
+                "name": "VMart-Bangalore"
+              },
+              "gps": "12.920914,77.68364",
+              "id": "3000011641449"
+            }
+          },
+          "id": "A1AAD5A650BE5229-RTO",
+          "start": {
+            "location": {
+              "address": {
+                "area_code": "560102",
+                "building": "#42 Olsen sector 4, hsr layout, Bangalore",
+                "city": "bangalore",
+                "country": "IN",
+                "locality": "#42 Olsen sector 4, hsr layout, Bangalore",
+                "name": "Monisha Sudha",
+                "state": "Karnataka"
+              },
+              "gps": "12.9141099,77.6371518"
+            },
+            "time": {
+              "timestamp": "2024-12-12T12:24:51.223Z"
+            }
+          },
+          "state": {
+            "descriptor": {
+              "code": "RTO-Initiated"
+            }
+          },
+          "type": "RTO",
           "tags": [
             {
               "code": "quote_trail",
               "list": [
-                { "code": "type", "value": "item" },
-                { "code": "id", "value": "6a9a423b6ac6b564" },
-                { "code": "value", "value": "-99909" },
-                { "code": "currency", "value": "INR" }
+                {
+                  "code": "type",
+                  "value": "item"
+                },
+                {
+                  "code": "id",
+                  "value": "3000029974815"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "-3000.00"
+                }
               ]
             },
             {
               "code": "quote_trail",
               "list": [
-                { "code": "type", "value": "delivery" },
+                {
+                  "code": "type",
+                  "value": "misc"
+                },
                 {
                   "code": "id",
-                  "value": "6c8c4d17-e00e-46ce-85a0-700688c44b22"
+                  "value": "A1AAD5A650BE5229"
                 },
-                { "code": "value", "value": "-0" },
-                { "code": "currency", "value": "INR" }
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "-0.00"
+                }
+              ]
+            },
+            {
+              "code": "quote_trail",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "delivery"
+                },
+                {
+                  "code": "id",
+                  "value": "A1AAD5A650BE5229-RTO"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "179.00"
+                }
               ]
             }
           ]
         }
       ],
-      "quote": {
-        "price": { "currency": "INR", "value": "0" },
-        "breakup": [
-          {
-            "title": "Samsung Galaxy S22 Ultra Green 12GB 256GB",
-            "price": { "currency": "INR", "value": "0" },
-            "@ondc/org/item_id": "6a9a423b6ac6b564",
-            "@ondc/org/item_quantity": { "count": 0 },
-            "@ondc/org/title_type": "item",
-            "item": { "price": { "currency": "INR", "value": "99909" } }
-          },
-          {
-            "title": "Delivery charges",
-            "price": { "currency": "INR", "value": "0" },
-            "@ondc/org/item_id": "6c8c4d17-e00e-46ce-85a0-700688c44b22_Cancel",
-            "@ondc/org/title_type": "delivery"
+      "items": [
+        {
+          "fulfillment_id": "A1AAD5A650BE5229",
+          "id": "3000029974815",
+          "quantity": {
+            "count": 0
           }
-        ],
-        "ttl": "P1D"
-      },
-      "payment": {
-        "params": {
-          "amount": "99909",
-          "currency": "INR",
-          "transaction_id": "9f0f565d-4a29-4803-a627-376edd8aec4d"
         },
-        "type": "ON-ORDER",
-        "uri": "https://cashfree.com/",
-        "status": "PAID",
+        {
+          "fulfillment_id": "A1AAD5A650BE5229-RTO",
+          "id": "3000029974815",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "payment": {
         "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
-        "@ondc/org/buyer_app_finder_fee_amount": "3",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "seller-app",
             "settlement_phase": "sale-amount",
-            "settlement_type": "neft",
-            "settlement_bank_account_no": "115022700000022",
-            "settlement_ifsc_code": "YESB0000001",
-            "beneficiary_name": "SELLMETRIC YPP COLLECTION ACCOUNT"
+            "settlement_type": "upi",
+            "upi_address": "gft@oksbi"
+          }
+        ],
+        "params": {
+          "amount": "3179.00",
+          "currency": "INR",
+          "transaction_id": "16e1ebc2-6c1e-45bd-9342-6a35f6cdf6f8"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "uri": "https://cashfree.com/"
+      },
+      "provider": {
+        "id": "3000011641449",
+        "locations": [
+          {
+            "id": "3000011641449"
           }
         ]
       },
-      "created_at": "2024-11-01T06:53:01.000Z",
-      "updated_at": "2024-11-01T12:39:32.953Z",
-      "tags": { "cancellation_reason_id": "011" }
+      "quote": {
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "value": "3000.00",
+                "currency": "INR"
+              }
+            },
+            "@ondc/org/item_id": "3000029974815",
+            "@ondc/org/item_quantity": {
+              "count": 0
+            },
+            "@ondc/org/title_type": "item",
+            "price": {
+              "value": "0",
+              "currency": "INR"
+            },
+            "title": "Samsung F55"
+          },
+          {
+            "@ondc/org/item_id": "A1AAD5A650BE5229",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "value": "0.00",
+              "currency": "INR"
+            },
+            "title": "misc"
+          },
+          {
+            "@ondc/org/item_id": "A1AAD5A650BE5229",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "value": "179.00",
+              "currency": "INR"
+            },
+            "title": "delivery"
+          },
+          {
+            "@ondc/org/item_id": "A1AAD5A650BE5229-RTO",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "value": "179.00",
+              "currency": "INR"
+            },
+            "title": "delivery"
+          }
+        ],
+        "price": {
+          "value": "358.00",
+          "currency": "INR"
+        },
+        "ttl": "PT15M"
+      },
+      "state": "Cancelled",
+      "updated_at": "2024-12-11T16:04:52.468Z"
     }
   }
 }

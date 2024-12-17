@@ -7,47 +7,37 @@
     "core_version": "1.2.0",
     "bap_id": "ondc-buyer.stagingshop.com",
     "bap_uri": "https://ondc-buyer.stagingshop.com/protocol/v1",
-    "bpp_uri": "https://ondc-connect.localzoho.com/api/v1/ondc/retail",
-    "transaction_id": "780e3f25-c7aa-4298-8810-6081880846c6",
-    "message_id": "ae9d53eb-e518-4b5a-9f03-8639429941fb",
-    "timestamp": "2024-12-09T12:40:51.966Z",
-    "bpp_id": "ondc-connect.localzoho.com",
+    "bpp_id": "preprod.dixch.com/ondc",
+    "transaction_id": "88f34eac-a66e-4233-acdd-7e03e9b65dcd",
+    "message_id": "b283d298-d6bc-45d2-9674-ffd4ca5ae93a",
+    "timestamp": "2024-11-01T17:05:15.453Z",
+    "bpp_id": "ondcpreprod.sellerapp.in",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "items": [
         {
-          "id": "3000020364095",
-          "quantity": {
-            "count": 1
-          },
-          "location_id": "3000006486809"
+          "id": "cd66d65211e9b706",
+          "quantity": { "count": 1 },
+          "location_id": "SANG-1000"
         }
       ],
       "provider": {
-        "id": "3000006486809",
-        "locations": [
-          {
-            "id": "3000006486809"
-          }
-        ]
+        "id": "slrp-1491484",
+        "locations": [{ "id": "SANG-1000" }]
       },
       "fulfillments": [
         {
           "end": {
             "location": {
-              "gps": "12.9141099, 77.6371518",
-              "address": {
-                "area_code": "560102"
-              }
+              "gps": "12.8206081, 77.6089779",
+              "address": { "area_code": "560083" }
             }
           }
         }
       ],
-      "payment": {
-        "type": "ON-ORDER"
-      }
+      "payment": { "type": "ON-ORDER" }
     }
   }
 }

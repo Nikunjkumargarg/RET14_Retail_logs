@@ -8,9 +8,9 @@
     "bap_id": "ondc-buyer.stagingshop.com",
     "bap_uri": "https://ondc-buyer.stagingshop.com/protocol/v1",
     "bpp_uri": "https://ondc-connect.localzoho.com/api/v1/ondc/retail",
-    "transaction_id": "425faf69-73d0-4bf3-87cf-cea2ad560111",
-    "message_id": "64221dfa-e014-4661-a688-3bd19250f93d",
-    "timestamp": "2024-12-11T12:10:03.119Z",
+    "transaction_id": "780e3f25-c7aa-4298-8810-6081880846c6",
+    "message_id": "ae9d53eb-e518-4b5a-9f03-8639429941fb",
+    "timestamp": "2024-12-09T12:40:51.966Z",
     "bpp_id": "ondc-connect.localzoho.com",
     "ttl": "PT30S"
   },
@@ -18,18 +18,18 @@
     "order": {
       "items": [
         {
-          "id": "3000029974815",
+          "id": "3000020364095",
           "quantity": {
             "count": 1
           },
-          "location_id": "3000011641449"
+          "location_id": "3000006486809"
         }
       ],
       "provider": {
-        "id": "3000011641449",
+        "id": "3000006486809",
         "locations": [
           {
-            "id": "3000011641449"
+            "id": "3000006486809"
           }
         ]
       },
