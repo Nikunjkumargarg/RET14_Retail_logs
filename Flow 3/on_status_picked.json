@@ -1,142 +1,226 @@
 {
   "context": {
-    "domain": "ONDC:RET14",
-    "country": "IND",
-    "city": "std:080",
     "action": "on_status",
-    "core_version": "1.2.0",
     "bap_id": "ondc-buyer.stagingshop.com",
     "bap_uri": "https://ondc-buyer.stagingshop.com/protocol/v1",
-    "bpp_id": "preprod.dixch.com/ondc",
-    "transaction_id": "88f34eac-a66e-4233-acdd-7e03e9b65dcd",
-    "message_id": "1368ca7d-f5dc-489b-885e-d22adc550951",
-    "timestamp": "2024-11-01T17:21:32.320Z",
-    "bpp_id": "ondcpreprod.sellerapp.in"
+    "bpp_id": "ondc-connect.localzoho.com",
+    "bpp_uri": "https://ondc-connect.localzoho.com/api/v1/ondc/retail",
+    "city": "std:080",
+    "core_version": "1.2.0",
+    "country": "IND",
+    "domain": "ONDC:RET14",
+    "message_id": "48604f65-d32d-40d8-ac3b-a708e7df6c97",
+    "timestamp": "2024-12-19T10:03:49.688Z",
+    "transaction_id": "3bddcb95-62fa-4433-b4ac-03206c843005",
+    "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "ZRPL000004102",
-      "state": "In-progress",
-      "provider": {
-        "id": "slrp-1491484",
-        "locations": [{ "id": "SANG-1000" }]
-      },
-      "items": [
-        {
-          "id": "cd66d65211e9b706",
-          "fulfillment_id": "5794cff0-78a4-4171-bb51-51549d8e8575",
-          "quantity": { "count": 1 }
-        }
-      ],
+      "id": "ZRPL000000092",
       "billing": {
-        "name": "Nikunj Garg",
-        "phone": "8950377998",
         "address": {
-          "name": "Nikunj Garg",
-          "building": "Colive whitestone, bannerghata",
+          "area_code": "560102",
+          "building": "#42 Olsen sector 4, hsr layout, Bangalore",
           "city": "bangalore",
-          "state": "Karnataka",
           "country": "IN",
-          "area_code": "560083",
-          "locality": "Colive whitestone, bannerghata"
+          "locality": "#42 Olsen sector 4, hsr layout, Bangalore",
+          "name": "Monisha Sudha",
+          "state": "Karnataka"
         },
-        "created_at": "2024-11-01T17:09:48.000Z",
-        "updated_at": "2024-11-01T17:09:48.000Z"
+        "created_at": "2024-12-19T09:42:06.000Z",
+        "email": "middleware@zrpl.co.in",
+        "name": "Monisha Sudha",
+        "phone": "9962870534",
+        "updated_at": "2024-12-19T09:42:06.000Z"
       },
+      "created_at": "2024-12-19T04:12:09.000Z",
       "fulfillments": [
         {
-          "id": "5794cff0-78a4-4171-bb51-51549d8e8575",
+          "end": {
+            "contact": {
+              "email": "middleware@zrpl.co.in",
+              "phone": "9962870534"
+            },
+            "instructions": {
+              "name": "Proof of delivery",
+              "code": "3",
+              "short_desc": "-",
+              "long_desc": "-"
+            },
+            "location": {
+              "address": {
+                "area_code": "560102",
+                "building": "#42 Olsen sector 4, hsr layout, Bangalore",
+                "city": "bangalore",
+                "country": "IN",
+                "locality": "#42 Olsen sector 4, hsr layout, Bangalore",
+                "name": "Monisha Sudha",
+                "state": "Karnataka"
+              },
+              "gps": "12.9141099,77.6371518"
+            },
+            "person": {
+              "name": "Monisha Sudha"
+            },
+            "time": {
+              "range": {
+                "end": "2024-12-21T23:26:17.001Z",
+                "start": "2024-12-21T22:26:17.001Z"
+              }
+            }
+          },
+          "id": "B349EE6B7A1CF3A9",
+          "@ondc/org/provider_name": "VMart-Bangalore",
+          "@ondc/org/TAT": "PT31H7M",
+          "start": {
+            "contact": {
+              "email": "first1@outlook.com",
+              "phone": "7896543210"
+            },
+            "instructions": {
+              "name": "Proof of pickup",
+              "code": "3",
+              "short_desc": "1285",
+              "long_desc": "-"
+            },
+            "location": {
+              "address": {
+                "area_code": "560066",
+                "city": "Bengaluru Urban",
+                "locality": "Bengaluru",
+                "state": "Karnataka"
+              },
+              "descriptor": {
+                "name": "VMart-Bangalore"
+              },
+              "gps": "12.920914,77.68364",
+              "id": "3000011641449"
+            },
+            "time": {
+              "range": {
+                "end": "2024-12-20T16:19:17.001Z",
+                "start": "2024-12-20T15:19:17.001Z"
+              },
+              "timestamp": "2024-12-19T10:03:49.641Z"
+            }
+          },
+          "state": {
+            "descriptor": {
+              "code": "Order-picked-up"
+            }
+          },
           "type": "Delivery",
           "tracking": false,
-          "start": {
-            "time": { "timestamp": "2024-11-01T17:21:32.316Z" },
-            "location": {
-              "id": "SANG-1000",
-              "gps": "12.9264417,77.5619417",
-              "address": {
-                "city": "Bangalore",
-                "state": "Karnataka",
-                "area_code": "560070",
-                "locality": "Banashankari"
-              },
-              "descriptor": { "name": "Sangeetha Mobiles" }
-            },
-            "contact": {
-              "phone": "8197759422",
-              "email": "support@sangeethamobiles.com"
+          "tags": [
+            {
+              "code": "tracking",
+              "list": [
+                {
+                  "code": "gps_enabled",
+                  "value": "no"
+                },
+                {
+                  "code": "url_enabled",
+                  "value": "no"
+                }
+              ]
             }
-          },
-          "end": {
-            "location": {
-              "gps": "12.8206081,77.6089779",
-              "address": {
-                "name": "Nikunj Garg",
-                "building": "Colive whitestone, bannerghata",
-                "city": "bangalore",
-                "state": "Karnataka",
-                "country": "IN",
-                "area_code": "560083",
-                "locality": "Colive whitestone, bannerghata"
-              }
-            },
-            "contact": {
-              "phone": "8950377998",
-              "email": "middleware@zrpl.co.in"
-            }
-          },
-          "state": { "descriptor": { "code": "Order-picked-up" } },
-          "@ondc/org/provider_name": "SellerApp-Logistics",
-          "@ondc/org/TAT": "P7D"
+          ]
         }
       ],
-      "quote": {
-        "price": { "currency": "INR", "value": "32494" },
-        "breakup": [
-          {
-            "title": "Samsung Galaxy A54 5G Awesome Lime 8GB 128GB",
-            "price": { "currency": "INR", "value": "32494" },
-            "@ondc/org/item_id": "cd66d65211e9b706",
-            "@ondc/org/item_quantity": { "count": 1 },
-            "@ondc/org/title_type": "item",
-            "item": {
-              "quantity": { "available": { "count": "99" } },
-              "price": { "currency": "INR", "value": "32494" }
-            }
-          },
-          {
-            "title": "Delivery Fee",
-            "price": { "currency": "INR", "value": "0" },
-            "@ondc/org/item_id": "5794cff0-78a4-4171-bb51-51549d8e8575",
-            "@ondc/org/title_type": "delivery"
+      "items": [
+        {
+          "fulfillment_id": "B349EE6B7A1CF3A9",
+          "id": "3000044103021",
+          "quantity": {
+            "count": 1
           }
-        ],
-        "ttl": "PT5M"
-      },
+        }
+      ],
       "payment": {
-        "params": {
-          "amount": "32494",
-          "currency": "INR",
-          "transaction_id": "88f34eac-a66e-4233-acdd-7e03e9b65dcd"
-        },
-        "type": "ON-ORDER",
-        "uri": "https://cashfree.com/",
-        "status": "PAID",
         "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
-        "@ondc/org/buyer_app_finder_fee_amount": "3",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "seller-app",
             "settlement_phase": "sale-amount",
-            "settlement_type": "neft",
-            "settlement_bank_account_no": "115022700000022",
-            "settlement_ifsc_code": "YESB0000001",
-            "beneficiary_name": "SELLMETRIC YPP COLLECTION ACCOUNT"
+            "settlement_type": "upi",
+            "upi_address": "gft@oksbi",
+            "settlement_status": "PAID",
+            "settlement_timestamp": "2024-12-19T09:42:17.008Z"
+          }
+        ],
+        "params": {
+          "amount": "36178.00",
+          "currency": "INR",
+          "transaction_id": "3bddcb95-62fa-4433-b4ac-03206c843005"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "uri": "https://cashfree.com/"
+      },
+      "provider": {
+        "id": "3000011641449",
+        "locations": [
+          {
+            "id": "3000011641449"
           }
         ]
       },
-      "created_at": "2024-11-01T11:40:35.000Z",
-      "updated_at": "2024-11-01T17:21:32.314Z"
+      "quote": {
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "value": "35999.00",
+                "currency": "INR"
+              }
+            },
+            "@ondc/org/item_id": "3000044103021",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "price": {
+              "value": "35999.00",
+              "currency": "INR"
+            },
+            "title": "Laptop"
+          },
+          {
+            "@ondc/org/item_id": "B349EE6B7A1CF3A9",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "value": "179.00",
+              "currency": "INR"
+            },
+            "title": "Delivery charges"
+          },
+          {
+            "@ondc/org/item_id": "B349EE6B7A1CF3A9",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "value": "0.00",
+              "currency": "INR"
+            },
+            "title": "Convenience Fee"
+          }
+        ],
+        "price": {
+          "value": "36178.00",
+          "currency": "INR"
+        },
+        "ttl": "PT30M"
+      },
+      "state": "In-progress",
+      "updated_at": "2024-12-19T10:03:49.641Z",
+      "documents": [
+        {
+          "url": "https://ondc-connect.localzoho.com/api/v1/ondc/invoice?order_id=ZRPL000000092&sign=ShAbVizl2LKqXwSXZaKKZAU8hd/Vk5PgS9zWfHnDBwXmSFjroDHvA%2BJRt2ieTGtIdUJwbo2bIfqqdgqeQCLPAA%3D%3D",
+          "label": "Invoice"
+        }
+      ]
     }
   }
 }

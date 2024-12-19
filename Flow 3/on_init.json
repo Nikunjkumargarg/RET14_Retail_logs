@@ -1,108 +1,149 @@
 {
   "context": {
-    "domain": "ONDC:RET14",
-    "country": "IND",
-    "city": "std:080",
     "action": "on_init",
-    "core_version": "1.2.0",
     "bap_id": "ondc-buyer.stagingshop.com",
     "bap_uri": "https://ondc-buyer.stagingshop.com/protocol/v1",
-    "bpp_id": "preprod.dixch.com/ondc",
-    "transaction_id": "88f34eac-a66e-4233-acdd-7e03e9b65dcd",
-    "message_id": "082ed10b-976e-4dd5-aa0f-533a5296ce04",
-    "timestamp": "2024-11-01T17:09:48.808Z",
-    "bpp_id": "ondcpreprod.sellerapp.in"
+    "bpp_id": "ondc-connect.localzoho.com",
+    "bpp_uri": "https://ondc-connect.localzoho.com/api/v1/ondc/retail",
+    "city": "std:080",
+    "core_version": "1.2.0",
+    "country": "IND",
+    "domain": "ONDC:RET14",
+    "message_id": "2ac510ca-9110-491e-bbc5-9eaf8c55ac5e",
+    "timestamp": "2024-12-19T09:42:06.479Z",
+    "transaction_id": "3bddcb95-62fa-4433-b4ac-03206c843005"
   },
   "message": {
     "order": {
-      "provider": {
-        "id": "slrp-1491484",
-        "locations": [{ "id": "SANG-1000" }]
-      },
-      "items": [
-        {
-          "id": "cd66d65211e9b706",
-          "fulfillment_id": "5794cff0-78a4-4171-bb51-51549d8e8575",
-          "quantity": { "count": 1 }
-        }
-      ],
       "billing": {
-        "name": "Nikunj Garg",
-        "phone": "8950377998",
         "address": {
-          "name": "Nikunj Garg",
-          "building": "Colive whitestone, bannerghata",
+          "area_code": "560102",
+          "building": "#42 Olsen sector 4, hsr layout, Bangalore",
           "city": "bangalore",
-          "state": "Karnataka",
           "country": "IN",
-          "area_code": "560083",
-          "locality": "Colive whitestone, bannerghata"
+          "locality": "#42 Olsen sector 4, hsr layout, Bangalore",
+          "name": "Monisha Sudha",
+          "state": "Karnataka"
         },
-        "created_at": "2024-11-01T17:09:48.000Z",
-        "updated_at": "2024-11-01T17:09:48.000Z"
+        "created_at": "2024-12-19T09:42:06.000Z",
+        "email": "middleware@zrpl.co.in",
+        "name": "Monisha Sudha",
+        "phone": "9962870534",
+        "updated_at": "2024-12-19T09:42:06.000Z"
       },
       "fulfillments": [
         {
-          "id": "5794cff0-78a4-4171-bb51-51549d8e8575",
-          "type": "Delivery",
-          "tracking": false,
           "end": {
-            "location": {
-              "gps": "12.8206081,77.6089779",
-              "address": {
-                "name": "Nikunj Garg",
-                "building": "Colive whitestone, bannerghata",
-                "city": "bangalore",
-                "state": "Karnataka",
-                "country": "IN",
-                "area_code": "560083",
-                "locality": "Colive whitestone, bannerghata"
-              }
+            "contact": {
+              "phone": "9962870534"
             },
-            "contact": { "phone": "8950377998" }
+            "location": {
+              "address": {
+                "area_code": "560102",
+                "building": "#42 Olsen sector 4, hsr layout, Bangalore",
+                "city": "bangalore",
+                "country": "IN",
+                "locality": "#42 Olsen sector 4, hsr layout, Bangalore",
+                "name": "Monisha Sudha",
+                "state": "Karnataka"
+              },
+              "gps": "12.9141099, 77.6371518"
+            }
+          },
+          "id": "B349EE6B7A1CF3A9",
+          "type": "Delivery",
+          "tracking": false
+        }
+      ],
+      "items": [
+        {
+          "fulfillment_id": "B349EE6B7A1CF3A9",
+          "id": "3000044103021",
+          "quantity": {
+            "count": 1
           }
         }
       ],
-      "quote": {
-        "price": { "currency": "INR", "value": "32494" },
-        "breakup": [
-          {
-            "title": "Samsung Galaxy A54 5G Awesome Lime 8GB 128GB",
-            "price": { "currency": "INR", "value": "32494" },
-            "@ondc/org/item_id": "cd66d65211e9b706",
-            "@ondc/org/item_quantity": { "count": 1 },
-            "@ondc/org/title_type": "item",
-            "item": { "price": { "currency": "INR", "value": "32494" } }
-          },
-          {
-            "title": "Delivery charges",
-            "price": { "currency": "INR", "value": "0" },
-            "@ondc/org/item_id": "5794cff0-78a4-4171-bb51-51549d8e8575",
-            "@ondc/org/title_type": "delivery"
-          }
-        ],
-        "ttl": "PT5M"
-      },
       "payment": {
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
-        "@ondc/org/buyer_app_finder_fee_amount": "3",
         "@ondc/org/settlement_details": [
           {
+            "bank_name": "Axis Bank",
+            "beneficiary_name": "Zoho Corporation",
+            "branch_name": "Velachery-Chennai",
+            "settlement_bank_account_no": "910020019889016",
             "settlement_counterparty": "seller-app",
+            "settlement_ifsc_code": "UTIB0000234",
             "settlement_phase": "sale-amount",
-            "settlement_type": "neft",
-            "settlement_bank_account_no": "115022700000022",
-            "settlement_ifsc_code": "YESB0000001",
-            "beneficiary_name": "SELLMETRIC YPP COLLECTION ACCOUNT"
+            "settlement_type": "neft"
+          }
+        ],
+        "status": "NOT-PAID",
+        "type": "ON-ORDER",
+        "@ondc/org/settlement_basis": "delivery"
+      },
+      "provider": {
+        "id": "3000011641449",
+        "locations": [
+          {
+            "id": "3000011641449"
           }
         ]
+      },
+      "quote": {
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "value": "35999.00",
+                "currency": "INR"
+              }
+            },
+            "@ondc/org/item_id": "3000044103021",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "price": {
+              "value": "35999.00",
+              "currency": "INR"
+            },
+            "title": "Laptop"
+          },
+          {
+            "@ondc/org/item_id": "B349EE6B7A1CF3A9",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "value": "179.00",
+              "currency": "INR"
+            },
+            "title": "Delivery charges"
+          }
+        ],
+        "price": {
+          "value": "36178.00",
+          "currency": "INR"
+        },
+        "ttl": "PT15M"
       },
       "tags": [
         {
           "code": "bpp_terms",
           "list": [
-            { "code": "tax_number", "value": "29ABDCS3411L1Z7" },
-            { "code": "provider_tax_number", "value": "AAMCS5916J" }
+            {
+              "code": "tax_number",
+              "value": "33AACCZ3115C1ZW"
+            },
+            {
+              "code": "provider_tax_number",
+              "value": "AAACW1102A"
+            },
+            {
+              "code": "np_type",
+              "value": "MSN"
+            }
           ]
         }
       ]

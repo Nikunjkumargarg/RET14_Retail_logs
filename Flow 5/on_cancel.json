@@ -9,8 +9,8 @@
     "core_version": "1.2.0",
     "country": "IND",
     "domain": "ONDC:RET14",
-    "message_id": "b6651f75-1d85-4c9b-80c3-d1f50c9be85d",
-    "timestamp": "2024-12-12T12:24:51.244Z",
+    "message_id": "2f5e178f-b73d-41de-8e7b-f81685aca93d",
+    "timestamp": "2024-12-18T05:42:18.001Z",
     "transaction_id": "16e1ebc2-6c1e-45bd-9342-6a35f6cdf6f8",
     "ttl": "PT30S"
   },
@@ -113,7 +113,7 @@
                 },
                 {
                   "code": "reason_id",
-                  "value": "011"
+                  "value": "012"
                 },
                 {
                   "code": "initiated_by",
@@ -167,7 +167,7 @@
               "gps": "12.9141099,77.6371518"
             },
             "time": {
-              "timestamp": "2024-12-12T12:24:51.223Z"
+              "timestamp": "2024-12-18T05:42:17.972Z"
             }
           },
           "state": {

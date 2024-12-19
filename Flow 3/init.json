@@ -7,58 +7,66 @@
     "core_version": "1.2.0",
     "bap_id": "ondc-buyer.stagingshop.com",
     "bap_uri": "https://ondc-buyer.stagingshop.com/protocol/v1",
-    "bpp_id": "preprod.dixch.com/ondc",
-    "transaction_id": "88f34eac-a66e-4233-acdd-7e03e9b65dcd",
-    "message_id": "082ed10b-976e-4dd5-aa0f-533a5296ce04",
-    "timestamp": "2024-11-01T17:09:48.691Z",
-    "bpp_id": "ondcpreprod.sellerapp.in",
+    "bpp_uri": "https://ondc-connect.localzoho.com/api/v1/ondc/retail",
+    "transaction_id": "3bddcb95-62fa-4433-b4ac-03206c843005",
+    "message_id": "2ac510ca-9110-491e-bbc5-9eaf8c55ac5e",
+    "timestamp": "2024-12-19T09:42:06.357Z",
+    "bpp_id": "ondc-connect.localzoho.com",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "provider": {
-        "id": "slrp-1491484",
-        "locations": [{ "id": "SANG-1000" }]
+        "id": "3000011641449",
+        "locations": [
+          {
+            "id": "3000011641449"
+          }
+        ]
       },
       "items": [
         {
-          "id": "cd66d65211e9b706",
-          "quantity": { "count": 1 },
-          "fulfillment_id": "5794cff0-78a4-4171-bb51-51549d8e8575"
+          "id": "3000044103021",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "B349EE6B7A1CF3A9"
         }
       ],
       "billing": {
         "address": {
-          "name": "Nikunj Garg",
-          "building": "Colive whitestone, bannerghata",
+          "name": "Monisha Sudha",
+          "building": "#42 Olsen sector 4, hsr layout, Bangalore",
           "city": "bangalore",
           "state": "Karnataka",
           "country": "IN",
-          "area_code": "560083",
-          "locality": "Colive whitestone, bannerghata"
+          "area_code": "560102",
+          "locality": "#42 Olsen sector 4, hsr layout, Bangalore"
         },
-        "phone": "8950377998",
-        "name": "Nikunj Garg",
+        "phone": "9962870534",
+        "name": "Monisha Sudha",
         "email": "middleware@zrpl.co.in",
-        "created_at": "2024-11-01T17:09:48.000Z",
-        "updated_at": "2024-11-01T17:09:48.000Z"
+        "created_at": "2024-12-19T09:42:06.000Z",
+        "updated_at": "2024-12-19T09:42:06.000Z"
       },
       "fulfillments": [
         {
-          "id": "5794cff0-78a4-4171-bb51-51549d8e8575",
+          "id": "B349EE6B7A1CF3A9",
           "type": "Delivery",
           "end": {
-            "contact": { "phone": "8950377998" },
+            "contact": {
+              "phone": "9962870534"
+            },
             "location": {
-              "gps": "12.8206081, 77.6089779",
+              "gps": "12.9141099, 77.6371518",
               "address": {
-                "name": "Nikunj Garg",
-                "building": "Colive whitestone, bannerghata",
-                "locality": "Colive whitestone, bannerghata",
+                "name": "Monisha Sudha",
+                "building": "#42 Olsen sector 4, hsr layout, Bangalore",
+                "locality": "#42 Olsen sector 4, hsr layout, Bangalore",
                 "city": "bangalore",
                 "state": "Karnataka",
                 "country": "IN",
-                "area_code": "560083"
+                "area_code": "560102"
               }
             }
           }
